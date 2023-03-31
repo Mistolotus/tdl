@@ -37,3 +37,7 @@ func (b *Bolt) Delete(key string) error {
 		return tx.Bucket(b.ns).Delete([]byte(key))
 	})
 }
+
+func (b *Bolt) Close() error {
+	return b.db.Close()
+}

@@ -3,23 +3,24 @@ package chat
 import (
 	"context"
 	"fmt"
+	"os"
+	"regexp"
+	"time"
+
+	"github.com/Mistolotus/tdl/app/internal/tgc"
+	"github.com/Mistolotus/tdl/pkg/prog"
+	"github.com/Mistolotus/tdl/pkg/storage"
+	"github.com/Mistolotus/tdl/pkg/tmedia"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"github.com/fatih/color"
 	"github.com/go-faster/jx"
 	"github.com/gotd/contrib/middleware/ratelimit"
 	"github.com/gotd/td/telegram/peers"
 	"github.com/gotd/td/telegram/query"
 	"github.com/gotd/td/tg"
-	"github.com/Mistolotus/tdl/app/internal/tgc"
-	"github.com/Mistolotus/tdl/pkg/prog"
-	"github.com/Mistolotus/tdl/pkg/storage"
-	"github.com/Mistolotus/tdl/pkg/tmedia"
-	"github.com/Mistolotus/tdl/pkg/utils"
 	"github.com/jedib0t/go-pretty/v6/progress"
 	"go.uber.org/multierr"
 	"golang.org/x/time/rate"
-	"os"
-	"regexp"
-	"time"
 )
 
 const (

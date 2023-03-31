@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"time"
+
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/fatih/color"
-	"github.com/gotd/contrib/middleware/floodwait"
 	"github.com/Mistolotus/tdl/app/internal/dliter"
 	"github.com/Mistolotus/tdl/app/internal/tgc"
 	"github.com/Mistolotus/tdl/pkg/consts"
@@ -16,11 +16,13 @@ import (
 	"github.com/Mistolotus/tdl/pkg/key"
 	"github.com/Mistolotus/tdl/pkg/kv"
 	"github.com/Mistolotus/tdl/pkg/logger"
+	"github.com/fatih/color"
+	"github.com/gotd/contrib/middleware/floodwait"
+	"github.com/gotd/td/telegram"
 	"github.com/jedib0t/go-pretty/v6/text"
 	"github.com/spf13/viper"
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
-	"time"
 )
 
 type Options struct {
@@ -50,6 +52,10 @@ func Run(ctx context.Context, opts *Options) error {
 		return err
 	}
 
+	return ExecDownload(c, kvd, ctx, opts)
+}
+
+func ExecDownload(c *telegram.Client, kvd kv.KV, ctx context.Context, opts *Options) error {
 	return tgc.RunWithAuth(ctx, c, func(ctx context.Context) (rerr error) {
 		color.Green("Preparing DC pool... It may take a while. size: %d", opts.PoolSize)
 

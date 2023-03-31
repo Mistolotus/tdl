@@ -2,10 +2,11 @@ package kv
 
 import (
 	"errors"
-	"github.com/Mistolotus/tdl/pkg/validator"
-	"go.etcd.io/bbolt"
 	"os"
 	"time"
+
+	"github.com/Mistolotus/tdl/pkg/validator"
+	"go.etcd.io/bbolt"
 )
 
 var (
@@ -16,6 +17,7 @@ type KV interface {
 	Get(key string) ([]byte, error)
 	Set(key string, value []byte) error
 	Delete(key string) error
+	Close() error
 }
 
 type Options struct {

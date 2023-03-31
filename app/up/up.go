@@ -2,10 +2,13 @@ package up
 
 import (
 	"context"
-	"github.com/fatih/color"
+
 	"github.com/Mistolotus/tdl/app/internal/tgc"
 	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/kv"
 	"github.com/Mistolotus/tdl/pkg/uploader"
+	"github.com/fatih/color"
+	"github.com/gotd/td/telegram"
 	"github.com/spf13/viper"
 )
 
@@ -15,19 +18,31 @@ type Options struct {
 	Excludes []string
 }
 
-func Run(ctx context.Context, opts *Options) error {
+func WalkFile(opts *Options) ([]*file, error) {
 	files, err := walk(opts.Paths, opts.Excludes)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	color.Blue("Files count: %d", len(files))
+	return files, nil
+}
+
+func Run(ctx context.Context, opts *Options) error {
+	files, err := WalkFile(opts)
+	if err != nil {
+		return err
+	}
 
 	c, kvd, err := tgc.NoLogin(ctx)
 	if err != nil {
 		return err
 	}
 
+	return ExecUp(c, kvd, files, ctx, opts)
+}
+
+func ExecUp(c *telegram.Client, kvd kv.KV, files []*file, ctx context.Context, opts *Options) error {
 	return tgc.RunWithAuth(ctx, c, func(ctx context.Context) error {
 		options := &uploader.Options{
 			Client:   c.API(),
