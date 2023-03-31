@@ -3,12 +3,12 @@ package dl
 import (
 	"context"
 	"github.com/gotd/td/telegram/peers"
-	"github.com/iyear/tdl/app/internal/dliter"
-	"github.com/iyear/tdl/pkg/dcpool"
-	"github.com/iyear/tdl/pkg/kv"
-	"github.com/iyear/tdl/pkg/logger"
-	"github.com/iyear/tdl/pkg/storage"
-	"github.com/iyear/tdl/pkg/utils"
+	"github.com/Mistolotus/tdl/app/internal/dliter"
+	"github.com/Mistolotus/tdl/pkg/dcpool"
+	"github.com/Mistolotus/tdl/pkg/kv"
+	"github.com/Mistolotus/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/pkg/storage"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"go.uber.org/zap"
 )
 

@@ -3,8 +3,8 @@ package dliter
 import (
 	"github.com/gotd/td/telegram/peers"
 	"github.com/gotd/td/tg"
-	"github.com/iyear/tdl/pkg/dcpool"
-	"github.com/iyear/tdl/pkg/kv"
+	"github.com/Mistolotus/tdl/pkg/dcpool"
+	"github.com/Mistolotus/tdl/pkg/kv"
 	"sync"
 	"text/template"
 )

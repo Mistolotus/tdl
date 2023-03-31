@@ -44,7 +44,7 @@ It reaches my proxy's speed limit, and the **speed depends on whether you are a 
 
 ## Install
 
-Go to [GitHub Releases](https://github.com/iyear/tdl/releases) to download the latest version
+Go to [GitHub Releases](https://github.com/Mistolotus/tdl/releases) to download the latest version
 
 (optional) Use it everywhere:
 ```powershell
@@ -151,7 +151,7 @@ tdl login --code
 >
 > If you need higher speed, set higher threads and size
 > 
-> For details: https://github.com/iyear/tdl/issues/30
+> For details: https://github.com/Mistolotus/tdl/issues/30
 
 - Download (protected) chat files from message urls:
 

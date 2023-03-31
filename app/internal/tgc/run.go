@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/gotd/td/telegram"
-	"github.com/iyear/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/pkg/logger"
 	"go.uber.org/zap"
 )
 

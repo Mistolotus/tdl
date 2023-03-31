@@ -3,7 +3,7 @@ package takeout
 import (
 	"context"
 	"github.com/gotd/td/tg"
-	"github.com/iyear/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/consts"
 )
 
 func Takeout(ctx context.Context, invoker tg.Invoker) (int64, error) {

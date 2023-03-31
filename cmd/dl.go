@@ -3,9 +3,9 @@ package cmd
 import (
 	"errors"
 	"fmt"
-	"github.com/iyear/tdl/app/dl"
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/app/dl"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/logger"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"strings"

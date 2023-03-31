@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 	"github.com/gabriel-vasile/mimetype"
-	"github.com/iyear/tdl/pkg/uploader"
-	"github.com/iyear/tdl/pkg/utils"
+	"github.com/Mistolotus/tdl/pkg/uploader"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"os"
 	"path/filepath"
 )

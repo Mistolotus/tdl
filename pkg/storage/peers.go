@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"github.com/gotd/td/telegram/peers"
-	"github.com/iyear/tdl/pkg/key"
-	"github.com/iyear/tdl/pkg/kv"
+	"github.com/Mistolotus/tdl/pkg/key"
+	"github.com/Mistolotus/tdl/pkg/kv"
 	"strconv"
 )
 

@@ -2,7 +2,7 @@ package tmedia
 
 import (
 	"github.com/gotd/td/tg"
-	"github.com/iyear/tdl/pkg/downloader"
+	"github.com/Mistolotus/tdl/pkg/downloader"
 )
 
 func GetPhotoInfo(photo *tg.MessageMediaPhoto) (*downloader.Item, bool) {

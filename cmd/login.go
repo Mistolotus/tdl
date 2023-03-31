@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"github.com/fatih/color"
-	"github.com/iyear/tdl/app/login"
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/app/login"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/logger"
 	"github.com/spf13/cobra"
 )
 

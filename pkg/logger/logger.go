@@ -2,7 +2,7 @@ package logger
 
 import (
 	"context"
-	"github.com/iyear/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/consts"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"

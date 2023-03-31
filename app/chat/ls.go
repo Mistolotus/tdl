@@ -6,8 +6,8 @@ import (
 	"github.com/fatih/color"
 	"github.com/gotd/contrib/middleware/ratelimit"
 	"github.com/gotd/td/telegram/query"
-	"github.com/iyear/tdl/app/internal/tgc"
-	"github.com/iyear/tdl/pkg/utils"
+	"github.com/Mistolotus/tdl/app/internal/tgc"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"golang.org/x/time/rate"
 	"time"
 )

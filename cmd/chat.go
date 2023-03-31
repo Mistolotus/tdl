@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/iyear/tdl/app/chat"
-	"github.com/iyear/tdl/pkg/logger"
-	"github.com/iyear/tdl/pkg/utils"
+	"github.com/Mistolotus/tdl/app/chat"
+	"github.com/Mistolotus/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"github.com/spf13/cobra"
 	"math"
 	"strings"

@@ -3,9 +3,9 @@ package up
 import (
 	"context"
 	"github.com/fatih/color"
-	"github.com/iyear/tdl/app/internal/tgc"
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/uploader"
+	"github.com/Mistolotus/tdl/app/internal/tgc"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/uploader"
 	"github.com/spf13/viper"
 )
 

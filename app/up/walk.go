@@ -1,8 +1,8 @@
 package up
 
 import (
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/utils"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"io/fs"
 	"path/filepath"
 	"strings"

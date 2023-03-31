@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"github.com/gotd/td/telegram/updates"
-	"github.com/iyear/tdl/pkg/key"
-	"github.com/iyear/tdl/pkg/kv"
+	"github.com/Mistolotus/tdl/pkg/key"
+	"github.com/Mistolotus/tdl/pkg/kv"
 )
 
 type State struct {

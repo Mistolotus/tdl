@@ -2,7 +2,7 @@ package uploader
 
 import (
 	"context"
-	"github.com/iyear/tdl/pkg/ps"
+	"github.com/Mistolotus/tdl/pkg/ps"
 	"github.com/jedib0t/go-pretty/v6/progress"
 	"strings"
 	"time"

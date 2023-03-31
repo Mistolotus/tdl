@@ -2,10 +2,11 @@ package main
 
 import (
 	"context"
-	"github.com/fatih/color"
-	"github.com/iyear/tdl/cmd"
 	"os"
 	"os/signal"
+
+	"github.com/Mistolotus/tdl/cmd"
+	"github.com/fatih/color"
 )
 
 func main() {
@@ -15,4 +16,5 @@ func main() {
 	if err := cmd.New().ExecuteContext(ctx); err != nil {
 		color.Red("%v", err)
 	}
+
 }

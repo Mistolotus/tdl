@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"github.com/iyear/tdl/app/up"
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/app/up"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/logger"
 	"github.com/spf13/cobra"
 )
 

@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"github.com/fatih/color"
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/logger"
-	"github.com/iyear/tdl/pkg/utils"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/logger"
+	"github.com/Mistolotus/tdl/pkg/utils"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
 	"github.com/spf13/viper"
@@ -47,7 +47,7 @@ func New() *cobra.Command {
 	cmd.PersistentFlags().Bool(consts.FlagDebug, false, "enable debug mode")
 
 	// The default parameters are consistent with the official client to reduce the probability of blocking
-	// https://github.com/iyear/tdl/issues/30
+	// https://github.com/Mistolotus/tdl/issues/30
 	cmd.PersistentFlags().IntP(consts.FlagPartSize, "s", 128*1024, "part size for transfer, max is 512*1024")
 	cmd.PersistentFlags().IntP(consts.FlagThreads, "t", 4, "max threads for transfer one item")
 	cmd.PersistentFlags().IntP(consts.FlagLimit, "l", 2, "max number of concurrent tasks")

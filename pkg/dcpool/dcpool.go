@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/gotd/td/telegram"
 	"github.com/gotd/td/tg"
-	"github.com/iyear/tdl/pkg/takeout"
+	"github.com/Mistolotus/tdl/pkg/takeout"
 	"go.uber.org/multierr"
 	"golang.org/x/sync/errgroup"
 	"sync"

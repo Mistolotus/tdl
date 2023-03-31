@@ -4,7 +4,7 @@ import (
 	"bytes"
 	_ "embed"
 	"github.com/fatih/color"
-	"github.com/iyear/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/consts"
 	"github.com/spf13/cobra"
 	"runtime"
 	"text/template"

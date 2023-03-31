@@ -3,7 +3,7 @@ package archive
 import (
 	"context"
 	"github.com/fatih/color"
-	"github.com/iyear/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/consts"
 	"github.com/mholt/archiver/v4"
 	"os"
 )

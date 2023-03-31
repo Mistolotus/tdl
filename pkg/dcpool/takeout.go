@@ -2,7 +2,7 @@ package dcpool
 
 import (
 	"github.com/gotd/td/tg"
-	"github.com/iyear/tdl/pkg/takeout"
+	"github.com/Mistolotus/tdl/pkg/takeout"
 )
 
 func (p *pool) Takeout(dc int) *tg.Client {

@@ -4,9 +4,9 @@ import (
 	"context"
 	"github.com/fatih/color"
 	"github.com/gotd/td/telegram/auth"
-	"github.com/iyear/tdl/app/internal/tgc"
-	"github.com/iyear/tdl/pkg/consts"
-	"github.com/iyear/tdl/pkg/key"
+	"github.com/Mistolotus/tdl/app/internal/tgc"
+	"github.com/Mistolotus/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/key"
 )
 
 func Code(ctx context.Context) error {

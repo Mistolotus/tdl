@@ -7,7 +7,7 @@ import (
 	"github.com/gotd/td/telegram/peers"
 	"github.com/gotd/td/telegram/query"
 	"github.com/gotd/td/tg"
-	"github.com/iyear/tdl/pkg/consts"
+	"github.com/Mistolotus/tdl/pkg/consts"
 	"net/url"
 	"strconv"
 	"strings"

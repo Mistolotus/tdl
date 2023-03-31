@@ -1,4 +1,4 @@
-module github.com/iyear/tdl
+module github.com/Mistolotus/tdl
 
 go 1.19
 
