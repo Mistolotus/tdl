@@ -1,4 +1,4 @@
-package internalcore
+package core
 
 import "github.com/Mistolotus/tdl/app/internal/tgc"
 
