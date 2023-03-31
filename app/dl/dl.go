@@ -51,7 +51,6 @@ func Run(ctx context.Context, opts *Options) error {
 	if err != nil {
 		return err
 	}
-
 	return ExecDownload(c, kvd, ctx, opts)
 }
 
